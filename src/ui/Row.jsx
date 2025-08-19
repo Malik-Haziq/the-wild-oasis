@@ -13,8 +13,8 @@ const Row = styled.div`
   ${(props) =>
     props.type === "horizontal" &&
     css`
-      justify-content: "center";
-      align-items: "center";
+      align-items: center;
+      justify-content: space-between;
     `}
 `;
 
