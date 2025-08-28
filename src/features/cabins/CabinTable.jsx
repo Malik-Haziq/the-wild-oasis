@@ -10,7 +10,7 @@ export default function CabinTable() {
   const [searchParams] = useSearchParams();
   if (isLoading) return <Spinner />;
 
-  let filteredCabins;
+  let filteredCabins = cabins;
 
   if (searchParams.get("discount") === "all") filteredCabins = cabins;
   if (searchParams.get("discount") === "no-discount")
